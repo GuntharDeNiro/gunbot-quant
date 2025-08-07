@@ -109,6 +109,54 @@ If you intend to modify the application frontend code, you will need **Node.js v
 -   **Reference SDK Implementation:** The code in `gunbot_quant/gunbot_api` serves as a practical, real-world example of how to use the official [Gunbot Python SDK](https://pypi.org/project/gunbot-sdk-python/).
 -   **Strategy Compatibility:** The included strategy `.js` files are compatible with any **Gunbot Defi license** or higher. They provide a robust suite of open-source strategies that can be directly deployed to your bot from the GQ interface.
 
+## Supported Exchanges
+
+Gunbot Quant leverages the CCXT library and Yahoo Finance to fetch historical data, providing support for a wide range of markets.
+
+#### Primary Crypto Exchanges (Gunbot Compatible)
+These exchanges are recommended as they are also supported by Gunbot, enabling a seamless workflow from backtesting in GQ to live deployment. They generally offer reliable and deep historical data.
+
+| Exchange         | CCXT ID        |
+|------------------|----------------|
+| Binance          | `binance`      |
+| Binance US       | `binanceus`    |
+| BingX            | `bingx`        |
+| Bitget           | `bitget`       |
+| Bybit            | `bybit`        |
+| Coinbase         | `coinbase`     |
+| Gate.io          | `gate`         |
+| HTX (Huobi)      | `htx`          |
+| Kraken           | `kraken`       |
+| KuCoin           | `kucoin`       |
+| MEXC             | `mexc`         |
+| OKX              | `okx`          |
+| Poloniex         | `poloniex`     |
+
+#### Stocks & ETFs
+Traditional financial assets are supported via Yahoo Finance. This allows you to screen and backtest individual stocks, ETFs, and indices.
+
+-   **Yahoo Finance** (ID: `yfinance`)
+
+#### Other CCXT-Supported Exchanges
+The following spot exchanges are also available. Data availability for older assets and less common timeframes may vary by exchange.
+
+| Exchange        | Exchange        | Exchange        |
+|-----------------|-----------------|-----------------|
+| Bequant         | Bitrue          | FMFW.io         |
+| Bithumb         | Bitstamp        | HashKey Global  |
+| BitMart         | Bitvavo         | LBank           |
+| BTC-Alpha       | CoinCatch       | MyOKX (EEA)     |
+| Coins.ph        | DigiFinex       | NovaDAX         |
+| ProBit          | TimeX           | Upbit           |
+| Vertex          | Waves.Exchange  | WhiteBit        |
+| XT              | EXMO            | p2b             |
+| OKX (US)        |                 |                 |
+
+
+#### Important Notes
+-   **Data Availability:** Support for an exchange does not guarantee the availability of deep historical data for all pairs or timeframes. This is determined by the exchange's own API limitations.
+-   **API Rate Limits:** When fetching large amounts of data for the first time, you may encounter exchange-side API rate limits. The tool caches data locally to minimize future requests.
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.

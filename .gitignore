@@ -1,0 +1,103 @@
+# ===================================================================
+# Python Caches and Virtual Environments
+# ===================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.env
+.venv
+*.egg-info/
+.coverage
+.tox/
+
+# ===================================================================
+# Sensitive Files and Local Configurations
+# ===================================================================
+# CRITICAL: Ignore Gunbot credentials file
+gunbot_creds.json
+
+# Ignore local environment variable files
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===================================================================
+# React / Vite / Node.js Frontend
+# ===================================================================
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node dependencies
+node_modules/
+
+# Vite build output
+dist/
+dist-ssr/
+.next/
+
+# Vite local config and cache
+.vite/
+coverage/
+
+# ===================================================================
+# Local Results and Data Caches
+# ===================================================================
+# Ignore all generated backtest and screener reports
+results/
+screener_results/
+screener_configs/
+
+# Ignore downloaded historical candle data
+data/
+
+# ===================================================================
+# IDE and Editor Directories
+# ===================================================================
+.idea/
+.vscode/
+*.swp
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ===================================================================
+# Operating System Files
+# ===================================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===================================================================
+# Miscellaneous
+# ===================================================================
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PEP 582; used by e.g. pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# Environments
+.env

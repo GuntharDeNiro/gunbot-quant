@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "gunbot-quant"
+version = "1.1.0"
+description = "A comprehensive backtesting and market screening tool for crypto trading strategies."
+authors = ["The Gunbot Team"]
+readme = "README.md"
+packages = [{include = "gunbot_quant"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.27.1"}
+python-binance = "^1.0.19"
+pandas = "^2.2.0"
+numpy = "^1.26.4"
+tqdm = "^4.66.2"
+typer = {extras = ["all"], version = "^0.9.0"}
+numba = "^0.59.0"
+pyarrow = "^15.0.0"
+python-multipart = "^0.0.9"
+requests = "^2.31.0"
+gunbot-sdk-python = "^0.1.0"
+pydantic = "^2.6.3"
+aiohttp = "^3.9.3"
+ccxt = "4.4.95"
+yfinance = "^0.2.65"
+
+[tool.poetry.scripts]
+gunbot-quant = "gunbot_quant.cli.main:app"
+# The command to start the web server and UI
+start = "run:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

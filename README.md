@@ -117,10 +117,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## Appendix: First-Time Setup
 
-<details>
-<summary><b>Click here for detailed prerequisite installation steps (Windows & Mac/Linux)</b></summary>
-<br/>
-
 **Windows**
 1.  **Install Python:**
     -   Go to the [official Python website's download page](https://www.python.org/downloads/windows/).
@@ -149,5 +145,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
         ```
     -   Follow the on-screen instructions to add Poetry to your shell's PATH.
     -   Close and reopen your terminal, then type `poetry --version` to verify it's installed.
-
-</details>

@@ -45,11 +45,6 @@ lerna-debug.log*
 # Node dependencies
 node_modules/
 
-# Vite build output
-dist/
-dist-ssr/
-.next/
-
 # Vite local config and cache
 .vite/
 coverage/

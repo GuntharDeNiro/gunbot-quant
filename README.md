@@ -6,6 +6,8 @@ Gunbot Quant is an open-source, self-hosted toolkit for quantitative trading ana
 
 The application is a self-contained Python package serving its own React-based frontend, intended for local use. **Gunbot is not required** to use the core screening and backtesting features.
 
+Blog post about this project: [https://www.gunbot.com/blog/gunbot-quant-market-screener-backtesting-tool/](https://www.gunbot.com/blog/gunbot-quant-market-screener-backtesting-tool/)
+
 ![Gunbot Quant](screenshot.png)
 
 

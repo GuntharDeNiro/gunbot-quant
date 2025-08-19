@@ -6,10 +6,18 @@ from .routes import router as api_router
 
 # --- Add these imports ---
 import os
+import mimetypes 
 from contextlib import asynccontextmanager
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from ..gunbot_api import client as gunbot_client
+
+# Explicitly set MIME types to prevent Windows-specific issues 
+# This ensures that JS and CSS files are served with the correct headers,
+# even if the user's Windows Registry is misconfigured.
+mimetypes.add_type("application/javascript", ".js")
+mimetypes.add_type("text/css", ".css")
+# --------------------------------------------------------------------------
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):

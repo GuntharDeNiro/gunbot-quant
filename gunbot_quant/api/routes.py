@@ -539,12 +539,13 @@ VERIFIED_SPOT_EXCHANGES = [
     {'value': 'wavesexchange', 'label': 'Waves.Exchange'},
     {'value': 'whitebit', 'label': 'WhiteBit'},
     {'value': 'xt', 'label': 'XT'},
+    {'value': 'coinbase', 'label': 'Coinbase'},
 ]
 
 GUNBOT_SUPPORTED_IDS = {
     'binance', 'binanceus', 'bingx', 'bitget',
     'kraken', 'kucoin', 'mexc', 'okx', 'poloniex',
-    'gate',  # 'gate.io' and 'gate' are often aliases
+    'gate', 'coinbase' # 'gate.io' and 'gate' are often aliases
 }
 
 @router.get("/exchanges", response_model=List[Dict[str, Any]], tags=["Configuration"])
